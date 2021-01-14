@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+/* //boton bolsa de carrito */
+
+.botonCarrito {
+    background: #FF6900;
+    width: 8vh;
+    height: 8vh;
+    border-radius: 50px;
+    top: 70%;                    \\-50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 1px 3px hsl(0, 0%, 35%));
+    border-width: 0px;
+    border-style: outset;
+    border-image: initial;
+    cursor: pointer;
+}
+
+.imgboton {
+    width: 57%;
+}
+
+/* footer */
+
+footer {
+    height: 10vh;
+    width: 100%;
+    background: #FAFAFA;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    filter: drop-shadow(0px -5px 10px #B4B4B4);
+}
+
+.iconos {
+    border-width: 0px;
+    border-style: outset;
+    border-image: initial;
+    background-color: transparent;
+    cursor: alias;
+}
+
+.iconotamaño {
+    height: 5vh;
+    width: 4.5vh;
+    position: relative;
+}
+
+ /* //cuadrados de carrusel */
+ 
+.cardSlider {
+    display: inline-flex;
+    flex-direction: column;
+    background: #ffff;
+    width: 13vh;
+    height: 16vh;
+    margin: 1.6vh 1.3vh;
+    border-radius: 13px;
+    filter: drop-shadow(0px 5px 7px rgba(0, 0, 0, 0.2));
+}
