@@ -7,6 +7,22 @@
 	outline: none;
 }
 
+/* texto */
+
+h1 {
+    font-size: 3vh;
+    line-height: 33px;
+    padding-bottom: 2vh;
+}
+
+p {
+    font-weight: 500;
+    font-size: 1.5vh;
+    letter-spacing: 0.07em;
+    color: #B4B4B4;
+}
+
+
 /* //boton bolsa de carrito */
 
 .botonCarrito {
@@ -14,7 +30,7 @@
     width: 8vh;
     height: 8vh;
     border-radius: 50px;
-    top: 70%;                    \\-50%;
+    top: 90%;                    \\-50%;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -59,6 +75,18 @@ footer {
 }
 
 /* slider carrusel */
+/* 
+.slider {
+    display: inline-block;
+    overflow-x: auto;
+    overflow-y: none;
+    white-space: nowrap;
+    scrollbar-width: none;
+    width: 100%;
+    height: 20vh;
+    padding-left: 1rem;
+    cursor: grab;
+} */
 
 .slider::-webkit-scrollbar {
     display: none;
@@ -74,4 +102,16 @@ footer {
     margin: 1.6vh 1.3vh;
     border-radius: 13px;
     filter: drop-shadow(0px 5px 7px rgba(0, 0, 0, 0.2));
+}
+
+.cardSlider img {
+    margin: auto;
+    max-width: 8vh;
+    padding-bottom: 1.5vh;
+}
+
+.cardSlider p {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vh;
 }

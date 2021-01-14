@@ -4,125 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/atomos/atomos.css">
     <title>Menu</title>
 </head>
 <body>
-    <div id="containerPrincipal">  
-        <header>
-            <div>
-                <h1>Titulo WEB</h1>
-                <p>Desccripcion</p>
-            </div>
-            <img class="logo" src="https://andreabcm.github.io/Proyecto-final/img/logo.png">
-        </header>
-        <div class="carruselSlider">
-            <div id="Tapas" class="cardSlider" onclick="filtrar(this)">
-                <img src="./img/slider/tapas.svg" alt=" ">
-                <p>Tapas</p>
-            </div>
-            <div id="Desayunos" class="cardSlider" onclick="filtrar(this)">
-                <img src="./img/slider/breakfast.svg" alt=" ">
-                <p>Desayunos</p>
-            </div>
-            <div id="Ensaladas" class="cardSlider" onclick="filtrar(this)">
-                <img src="./img/slider/salad.png" alt=" ">
-                <p>Ensaladas</p>
-            </div>
-            <div id="Almuerzos" class="cardSlider" onclick="filtrar(this)">
-                <img src="./img/slider/fastfood.svg" alt=" ">
-                <p>Almuerzos</p>
-            </div>
-            <div id="Cena" class="cardSlider" onclick="filtrar(this)">
-                <img src="./img/slider/dinner.svg" alt=" ">
-                <p>Cena</p>
-            </div>
-            <div id="Postres" class="cardSlider" onclick="filtrar(this)">
-                <img src="./img/slider/desert.svg" alt=" ">
-                <p>Postres</p>
-            </div>
-            <div id="Bebidas" class="cardSlider" onclick="filtrar(this)">
-                <img src="./img/slider/bebidas.svg" alt=" ">
-                <p>Bebidas</p>
-            </div>
-            <div id="Todos" class="cardSlider" onclick="filtrar(this)">
-                <img src="./img/slider/all.svg" alt=" ">
-                <p>Todos</p>
-            </div>
+    
+    <div class="slider">
+        <div id="Tapas" class="cardSlider" onclick="filtrar(this)">
+            <img src="/img/slider/tapas.svg" alt=" ">
+            <p>Tapas</p>
         </div>
-        <div class="menuElements">
-            <div class="element">
-                <img src="" alt="">
-                <div class="texto ">
-                    <p>15€</p>
-                    <h5>Desayuno de la Casa</h5>
-                    <h6>Huevos, pancakes y tocino</h6>
-                </div>
-                <div class="contador" data-numero="1">
-                    <button onclick="resta(this)" class="resta">-</button>
-                    <p class="quantity">0</p>
-                    <button onclick="suma(this)" class="suma">+</button>
-                </div>
-            </div>
-
+        <div id="Desayunos" class="cardSlider" onclick="filtrar(this)">
+            <img src="/img/slider/breakfast.svg" alt=" ">
+            <p>Desayunos</p>
         </div>
-        <footer>
-            <button class="iconos ">
-            <img src="img/footer/home.svg " class="iconotamaño ">
-        </button>
-
-            <button class="iconos ">
-            <img src="img/footer/bolsalike.svg " class="iconotamaño ">
-        </button>
-
-            <button onclick="cart()" class="botonCarrito">
-                <img src="img/footer/bolsa.svg " class="imgboton">
-        </button>
-
-            <button class="iconos ">
-            <img src="img/footer/corazon.svg " class="iconotamaño ">
-        </button>
-            <button class="iconos ">
-            <img src="img/footer/usuario.svg " class="iconotamaño ">
-        </button>
-        </footer>
+        <div id="Ensaladas" class="cardSlider" onclick="filtrar(this)">
+            <img src="/img/slider/salad3.svg" alt=" ">
+            <p>Ensaladas</p>
+        </div>
+        <div id="Almuerzos" class="cardSlider" onclick="filtrar(this)">
+            <img src="/img/slider/fastfood.svg" alt=" ">
+            <p>Almuerzos</p>
+        </div>
+        <div id="Cena" class="cardSlider" onclick="filtrar(this)">
+            <img src="/img/slider/dinner.svg" alt=" ">
+            <p>Cena</p>
+        </div>
+        <div id="Postres" class="cardSlider" onclick="filtrar(this)">
+            <img src="/img/slider/desert.svg" alt=" ">
+            <p>Postres</p>
+        </div>
+        <div id="Bebidas" class="cardSlider" onclick="filtrar(this)">
+            <img src="/img/slider/bebidas.svg" alt=" ">
+            <p>Bebidas</p>
+        </div>
+        <div id="Todos" class="cardSlider" onclick="filtrar(this)">
+            <img src="/img/slider/all.svg" alt=" ">
+            <p>Todos</p>
+        </div>
     </div>
-    <div id="checkout" style="display: none;">
 
-        <header>
-            <div class="fila1">
-                <button onclick="retornar()" class="return"><img src="img/flechita.png" alt="return"></button>
-            </div>
-
-            <div class="fila2">
-                <h3>My Cart</h3>
-            </div>
-        </header>
-
-        <main>
-
-            <div class="elementosMenu2"></div>
-        </main>
-        
-        <footer class="desglosePrecio">
-            <div class="precio">
-                <div class="columnaTexto">
-                    <p>Subtotal</p>
-                    <p>Tasas</p>
-                    <p>Delivery</p>
-                    <p>TOTAL</p>
-                </div>
-
-                <div class="columnaPrecio">
-                    <p id="subtotal">0€</p>
-                    <p id="tasas">0.0€</p>
-                    <p id="delivery">FREE</p>
-                    <p id="total">0€</p>
-                </div>
-            </div>
-            <button class="boton2" onclick="botonEnviarPedido()">Enviar pedido</button>
-        </footer>
-    </div>
     <!-- <script src=""></script> -->
 </body>
 </html>
