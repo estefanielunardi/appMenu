@@ -58,6 +58,11 @@ footer {
     position: relative;
 }
 
+/* slider carrusel */
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
  /* //cuadrados de carrusel */
  
 .cardSlider {
