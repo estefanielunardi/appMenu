@@ -4,15 +4,73 @@
 	list-style: none;
 	text-decoration: none;
 	border: none;
-	outline: none;
+    outline: none;
+    box-sizing: border-box;
 }
 
-/* texto */
+#principalContainer{
+    font-family: "Raleway";
+    display:block;
+    padding: 1rem;
+}
+
+#headerSection{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: "Raleway";
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.imgLogoHeader{
+    width: 22vw;
+    height: 12vw;
+}
+
 
 h1 {
     font-size: 3vh;
     line-height: 33px;
     padding-bottom: 2vh;
+}
+
+
+#sliderSection {
+    display: inline-block;
+    overflow-x: auto;
+    overflow-y: none;
+    white-space: nowrap;
+    scrollbar-width: none;
+    width: 100%;
+    height: 20vh;
+    padding-left: 1rem;
+    cursor: grab;
+} 
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+
+.cardSlider {
+    display: inline-flex;
+    flex-direction: column;
+    background: #ffff;
+    width: 13vh;
+    height: 16vh;
+    margin: 1.6vh 1.3vh;
+    border-radius: 13px;
+    filter: drop-shadow(0px 5px 7px rgba(0, 0, 0, 0.2));
+}
+
+.cardSlider img {
+    margin: auto;
+    max-width: 8vh;
+    padding-bottom: 1.5vh;
 }
 
 p {
@@ -22,7 +80,96 @@ p {
     color: #B4B4B4;
 }
 
+.cardSlider p {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vh;
+}
 
+#containerMenu {
+    background-color: #fdfdfd;
+    width: 100%;
+    height: 55vh;
+    overflow-x: auto;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.elementoMenu {
+    width: 100%;
+    display: flex;
+    background: #FFFFFF;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    padding-right: 3%;
+    padding-left: 3%;
+    position: relative;
+}
+
+.textoMenu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 50vw;
+    align-items: center;
+}
+
+.contador {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+
+.quantity {
+    width: 35px;
+    height: 30px;
+    text-align: center;
+    font-size: 1px;
+    font-size: 15px;
+    border: none;
+    color: black;
+    line-height: 25px;
+}
+
+.texto p {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 15px;
+    color: gold;
+    padding-bottom: 3%;
+}
+
+.elemento img {
+    width: 24vw;
+    height: 28vw;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.texto h5 {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    color: #000000;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.texto h6 {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 13px;
+    color: rgba(0, 0, 0, 0.43);
+    text-align: center;
+}
 /* //boton bolsa de carrito */
 
 .botonCarrito {
@@ -30,7 +177,7 @@ p {
     width: 8vh;
     height: 8vh;
     border-radius: 50px;
-    top: 90%;                    \\-50%;
+    top: -50%;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -72,83 +219,4 @@ footer {
     height: 5vh;
     width: 4.5vh;
     position: relative;
-}
-
-/* slider carrusel */
-
-.slider {
-    display: inline-block;
-    overflow-x: auto;
-    overflow-y: none;
-    white-space: nowrap;
-    scrollbar-width: none;
-    width: 100%;
-    height: 20vh;
-    padding-left: 1rem;
-    cursor: grab;
-} 
-
-.slider::-webkit-scrollbar {
-    display: none;
-}
- /* //cuadrados de carrusel */
- 
-.cardSlider {
-    display: inline-flex;
-    flex-direction: column;
-    background: #ffff;
-    width: 13vh;
-    height: 16vh;
-    margin: 1.6vh 1.3vh;
-    border-radius: 13px;
-    filter: drop-shadow(0px 5px 7px rgba(0, 0, 0, 0.2));
-}
-
-.cardSlider img {
-    margin: auto;
-    max-width: 8vh;
-    padding-bottom: 1.5vh;
-}
-
-.cardSlider p {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2vh;
-}
-
-/* elementos del menu */
-
-.elementosMenu1 {
-    background-color: #fdfdfd;
-    width: 100%;
-    height: 55vh;
-    overflow-x: auto;
-    padding-left: 3%;
-    padding-right: 3%;
-}
-
-.elemento {
-    width: 100%;
-    display: flex;
-    background: #FFFFFF;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 0.5rem;
-    padding-right: 3%;
-    padding-left: 3%;
-    position: relative;
-}
-
-.texto {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    width: 50vw;
-    align-items: center;
-}
-
-.contador {
-    display: flex;
-    justify-content: center;
-    flex-direction: column-reverse;
 }
