@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/atomos.css">
+    <link
+      href=" https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&amp;display=swap "
+      rel="stylesheet "
+    />
+
+    <title>Menu</title>
+</head>
+<body>
+    <div id="checkout" style="display: none;">
+        <header>
+            <div class="fila1">
+                <button onclick="retornar()" class="return"><img src="img/flechita.png" alt="return"></button>
+            </div>
+
+            <div class="fila2">
+                <h3>My Cart</h3>
+            </div>
+        </header>
+
+        <main>
+
+            <div class="elementosMenu2"></div>
+        </main>
+
+        <footer class="desglosePrecio">
+            <div class="precio">
+                <div class="columnaTexto">
+                    <p>Subtotal</p>
+                    <p>Tasas</p>
+                    <p>Delivery</p>
+                    <p>TOTAL</p>
+                </div>
+
+                <div class="columnaPrecio">
+                    <p id="subtotal"></p>
+                    <p id="tasas"></p>
+                    <p id="delivery"></p>
+                    <p id="total"></p>
+                </div>
+            </div>
+            <button class="boton2" onclick="botonEnviarPedido()">Enviar pedido</button>
+        </footer>
+
+    </div>
+</body>
+</html>
