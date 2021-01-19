@@ -170,7 +170,19 @@ p {
     color: rgba(0, 0, 0, 0.43);
     text-align: center;
 }
-/* //boton bolsa de carrito */
+
+
+#footerSection {
+    height: 10vh;
+    width: 100%;
+    background: #FAFAFA;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    filter: drop-shadow(0px -5px 10px #B4B4B4);
+}
 
 .botonCarrito {
     background: #FF6900;
@@ -191,20 +203,6 @@ p {
 
 .imgboton {
     width: 57%;
-}
-
-/* footer */
-
-footer {
-    height: 10vh;
-    width: 100%;
-    background: #FAFAFA;
-    position: fixed;
-    bottom: 0px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    filter: drop-shadow(0px -5px 10px #B4B4B4);
 }
 
 .iconos {
